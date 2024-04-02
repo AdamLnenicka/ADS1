@@ -8,6 +8,7 @@ This project aims to set up a MySQL database instance in Docker that meets speci
 
 In addition to the specified requirements, considerable effort was invested in creating additional Python scripts to automate various database setup tasks. These scripts streamline the process of configuring user roles, creating tables, setting up views, and adjusting database parameters. By voluntarily creating these scripts, the project aims to enhance efficiency and facilitate the setup process for future deployments.
 
+```
 proj1
 │   docker-compose.yml
 │   run_all_tasks.py
@@ -29,7 +30,7 @@ proj1
 │       set_timezone.py
 │
 └── readme.md
-
+```
 
 ## Tasks
 1. Use the pre-prepared image `niwics/mendeluads24p1` from Docker Hub containing a MySQL server (MariaDB) with a user "root" and password "aaa".
