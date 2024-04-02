@@ -5,6 +5,7 @@
 
 ## Description
 This project aims to set up a MySQL database instance in Docker that meets specific requirements.
+
 In addition to the specified requirements, considerable effort was invested in creating additional Python scripts to automate various database setup tasks. These scripts streamline the process of configuring user roles, creating tables, setting up views, and adjusting database parameters. By voluntarily creating these scripts, the project aims to enhance efficiency and facilitate the setup process for future deployments.
 
 ## Tasks
