@@ -1,4 +1,5 @@
 import mysql.connector
+import csv
 
 try:
     connection = mysql.connector.connect(
@@ -22,12 +23,17 @@ try:
     cursor.execute(create_table_query)
     print("Tabulka 'activity' vytvořena.")
 
-    # Vložení dat z tabulky 'student_activity' do 'activity'
-    insert_data_query = """
-        INSERT INTO activity (`datetime`, `student`, `room`, `activity`)
-        SELECT `datetime`, `student`, `room`, `activity` FROM student_activity;
-    """
-    cursor.execute(insert_data_query)
+    # Nahrání dat z CSV souboru do tabulky 'activity'
+    with open('data/student_activity.csv', newline='') as csvfile:
+        csv_reader = csv.reader(csvfile)
+        next(csv_reader)  # Skip header row
+        for row in csv_reader:
+            insert_data_query = """
+                INSERT INTO activity (`datetime`, `student`, `room`, `activity`)
+                VALUES (%s, %s, %s, %s)
+            """
+            cursor.execute(insert_data_query, row)
+
     print("Data vložena do tabulky 'activity'.")
 
 except mysql.connector.Error as error:
