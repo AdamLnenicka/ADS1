@@ -21,3 +21,5 @@ This project aims to set up a MySQL database instance in Docker that meets speci
 12. Run the MySQL Docker instance on external port 8080, accessible from another testing machine.
 
 ---
+for pulling my image 
+docker pull xlnenick/proj1:latest
