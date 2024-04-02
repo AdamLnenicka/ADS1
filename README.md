@@ -6,7 +6,7 @@
 ## Description
 This project aims to set up a MySQL database instance in Docker that meets specific requirements.
 
-## Requirements
+## Tasks
 1. Use the pre-prepared image `niwics/mendeluads24p1` from Docker Hub containing a MySQL server (MariaDB) with a user "root" and password "aaa".
 2. Create a user with your login and password "aaa" to allow connection from a remote testing machine.
 3. Create a role "student".
