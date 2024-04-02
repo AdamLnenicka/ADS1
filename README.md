@@ -1,7 +1,7 @@
 
 ---
 
-# Project 1 - MySQL Docker Instance
+# Project - MySQL Docker Instance
 
 ## Description
 This project aims to set up a MySQL database instance in Docker that meets specific requirements.
