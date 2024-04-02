@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: niwics/mendeluads24p1
+    ports:
+      - "8080:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: aaa
+    networks:
+      - app-network
+
+  adminer:
+    image: adminer
+    ports:
+      - "8081:8080"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
