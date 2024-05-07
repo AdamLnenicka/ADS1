@@ -48,4 +48,4 @@ proj1
 
 ---
 for pulling my image 
-```docker pull xlnenick/proj1:latest```
+```xlnenick/mendeluads:v1```
