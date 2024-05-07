@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  mysql:
-    image: niwics/mendeluads24p1
+  db:
+    image: xlnenick/mendeluads:v1
     ports:
       - "8080:3306"
     environment:

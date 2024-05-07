@@ -10,7 +10,7 @@ try:
     cursor = connection.cursor()
 
     set_role_query = """
-        GRANT student TO 'xlnenick'@'%';
+        SET DEFAULT ROLE 'student' FOR 'xlnenick'@'%';
     """
     cursor.execute(set_role_query)
     print("Role 'student' nastavena pro uživatele 'xlnenick'.")
